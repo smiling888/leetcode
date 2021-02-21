@@ -5,6 +5,11 @@ package com.lzh.array;
  * @Author: lzh <lzhhua110@126.com>
  * ******************************************************/
 public class L11maxArea {
+    /**
+     * 暴力破解法
+     * @param height
+     * @return
+     */
     public int maxArea(int[] height) {
         int max = 0;
         for (int i = 0; i < height.length; i++) {

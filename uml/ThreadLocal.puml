@@ -1,0 +1,24 @@
+@startuml
+Thread *--> ThreadLocal
+InheritableThreadLocal --^ ThreadLocal
+
+
+class Thread{
+    ThreadLocal.ThreadLocalMap<ThreadLocal,Object> threadLocals;
+    ThreadLocal.ThreadLocalMap<ThreadLocal,Object> inheritableThreadLocals;
+}
+class ThreadLocal{
+    void set(Object o)
+    Object get()
+    void remove()
+    class ThreadLocalMap
+}
+class InheritableThreadLocal{
+    void set(Object o)
+    Object get()
+    void remove()
+    class ThreadLocalMap
+}
+
+
+@enduml
