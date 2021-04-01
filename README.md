@@ -1,3 +1,9 @@
+# log
+0328 前缀和思想和滑动窗口会经常用在求子数组和子串问题:wq
+https://leetcode-cn.com/problems/subarray-sum-equals-k/solution/de-liao-yi-wen-jiang-qian-zhui-he-an-pai-yhyf/
+0327 旋转数组。使用空间置换  .相似的链表旋转。反转字符串
+
+
 # leetcode
 
 1 类命名方式。L后面数字对应着leetcode 题目编号。

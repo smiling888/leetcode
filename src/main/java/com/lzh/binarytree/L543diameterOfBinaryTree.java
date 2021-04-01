@@ -1,5 +1,7 @@
 package com.lzh.binarytree;
 
+import com.lzh.model.TreeNode;
+
 /******************************************************
  * @Date: 2021-02-09
  * @Author: lzh <lzhhua110@126.com>
@@ -7,12 +9,12 @@ package com.lzh.binarytree;
 public class L543diameterOfBinaryTree {
     int max = 0;
 
-    public int diameterOfBinaryTree(L1302DeepestLeavesSum.TreeNode root) {
+    public int diameterOfBinaryTree(TreeNode root) {
 
         return maxDep(root);
     }
 
-    public int maxDep(L1302DeepestLeavesSum.TreeNode treeNode) {
+    public int maxDep(TreeNode treeNode) {
         if (treeNode == null) {
             return 0;
         }
