@@ -8,8 +8,11 @@ import java.util.Stack;
  * ******************************************************/
 public class L150evalRPN {
     public int evalRPN(String[] tokens) {
+        StringBuilder stringBuilder=new StringBuilder();
+
         Stack<Integer> stack = new Stack<>();
         for (String token : tokens) {
+
             switch (token) {
                 case "+":
                     int a = stack.pop();

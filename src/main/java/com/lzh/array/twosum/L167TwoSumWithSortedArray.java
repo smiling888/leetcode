@@ -8,6 +8,12 @@ package com.lzh.array.twosum;
  * ******************************************************/
 
 public class L167TwoSumWithSortedArray {
+    /**
+     * 双指针法
+     * @param nums
+     * @param target
+     * @return
+     */
     public int[] twoSum(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
             return null;

@@ -5,7 +5,8 @@ package com.lzh.array;
  * @Author: lzh <lzhhua110@126.com>
  * ******************************************************/
 public class L11maxArea {
-    /**
+    /**https://leetcode-cn.com/problems/container-with-most-water/
+     * 盛最多水的容器
      * 暴力破解法
      * @param height
      * @return
