@@ -10,7 +10,11 @@ import java.util.List;
  * @Author: lzh <lzhhua110@126.com>
  * ******************************************************/
 public class L46permute {
-
+    /**https://leetcode-cn.com/problems/permutations/solution/python3-quan-pai-lie-wen-ti-gui-na-yi-ci-z1nj/
+     * 全排列
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> permute(int[] nums) {
         int len = nums.length;
         // 使用一个动态数组保存所有可能的全排列
@@ -49,6 +53,7 @@ public class L46permute {
         }
     }
 
+
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
         L46permute solution = new L46permute();
@@ -56,4 +61,6 @@ public class L46permute {
         System.out.println(lists);
     }
 
+
+//    public void permute(char )
 }
