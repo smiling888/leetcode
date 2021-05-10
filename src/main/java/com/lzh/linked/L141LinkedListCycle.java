@@ -8,7 +8,7 @@
  * @Date: 2019/6/13
  * @Author: lzh <liaozhenhua@qiyi.com>
  * ******************************************************/
-package com.lzh.array;
+package com.lzh.linked;
 
 import com.lzh.model.ListNode;
 

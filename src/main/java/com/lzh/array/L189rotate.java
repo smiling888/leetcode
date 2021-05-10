@@ -29,17 +29,41 @@ public class L189rotate {
      * @param k
      */
     public void rotate2(int[] nums, int k) {
-        int pre = nums[0];
-        for (int count = 0; count < nums.length; count++) {
-            int swapIndex = (count + k) % nums.length;
-            int tmp = nums[swapIndex];
-            nums[swapIndex] = pre;
-            pre = tmp;
+        int count = 0;
+        int start = 0;
+        while (count < nums.length) {
+            int pre = nums[start];
+            int next = (start + k) % nums.length;
+            while (next != start) {
+                int tmp = nums[next];
+                nums[next] = pre;
+                pre = tmp;
+                next = (next + k) % nums.length;
+                count++;
+                if (count == nums.length) {
+                    break;
+                }
+
+            }
+            nums[start] = pre;
+            count++;
+            start++;
+
+        }
+
+        for (int num : nums) {
+            System.out.print(num);
+
         }
     }
+    public static void main(String[] args) {
+        new L189rotate().rotate2(new int[]{1, 2, 3, 4, 5, 6, 7}, 3);
 
+    }
     //todo 两次数据反转
     public void rotate3(int[] nums, int k) {
 
     }
+
+
 }

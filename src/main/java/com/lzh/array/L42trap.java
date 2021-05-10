@@ -10,6 +10,8 @@ package com.lzh.array;
  */
 public class L42trap {
     /**
+     * https://leetcode-cn.com/problems/trapping-rain-water/
+     * 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
      * 双指针法  只要 \text{right\_max}[i]>\text{left\_max}[i]right_max[i]>left_max[i] （元素 0 到元素 6），积水高度将由 left_max 决定
      *
      * @param height
