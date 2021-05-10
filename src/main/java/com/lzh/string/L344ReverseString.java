@@ -10,8 +10,8 @@
  * ******************************************************/
 package com.lzh.string;
 
-public class L344ReverseString {
-    public void reverseString(char[] s) {
+public  class L344ReverseString {
+    public synchronized void reverseString(char[] s) {
         if (s == null) {
             return;
         }
