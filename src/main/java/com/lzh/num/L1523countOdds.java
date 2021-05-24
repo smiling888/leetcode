@@ -16,13 +16,16 @@ public class L1523countOdds {
         low = low % 2 == 0 ? low : low - 1;
         high = high % 2 == 0 ? high : high + 1;
         return (high - low) / 2;
+
     }
 
     public static void main(String[] args) {
         new L1523countOdds().countOdds(8, 10);
     }
 
+
     public int countOdds2(int low, int high) {
+
         return pre(high) - pre(low - 1);
     }
 
