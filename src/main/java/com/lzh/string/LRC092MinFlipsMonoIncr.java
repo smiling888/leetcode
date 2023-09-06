@@ -1,7 +1,7 @@
 package com.lzh.string;
 
 /**
- * Created on 2021-081-13
+ * Created on 2021-081git -13
  * https://leetcode-cn.com/problems/check-if-string-is-a-prefix-of-array/
  */
 public class LRC092MinFlipsMonoIncr {
