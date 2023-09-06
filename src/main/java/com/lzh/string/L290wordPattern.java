@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author liaozhenhua <liaozhenhua@kuaishou.com>
  * Created on 2021-08-19
  */
 public class L290wordPattern {
@@ -19,16 +18,16 @@ public class L290wordPattern {
         for (int i = 0; i < arr.length; i++) {
             char c = pattern.charAt(i);
             if (map.containsKey(new Character(c))) {
-                if(!map.get(c).equals(arr[i])) {
+                if (!map.get(c).equals(arr[i])) {
                     return false;
                 }
 
-            }else{
+            } else {
                 //出错地方
-                if(map.values().contains(arr[i])){
+                if (map.values().contains(arr[i])) {
                     return false;
                 }
-                map.put(c,arr[i]);
+                map.put(c, arr[i]);
             }
         }
 
@@ -37,7 +36,14 @@ public class L290wordPattern {
 
 
     public static void main(String[] args) {
-        new L290wordPattern().wordPattern("abba","dog dog dog dog");
+        //        new L290wordPattern().wordPattern("abba","dog dog dog dog");
+
+        Map<Long, String> map = new HashMap<>();
+        map.put(1L, "aa");
+        map.put(1000L, "aa");
+        Integer a = 1;
+
+        System.out.println(map.get(a));
     }
 
 }
