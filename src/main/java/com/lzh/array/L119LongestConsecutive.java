@@ -5,8 +5,14 @@ import java.util.Set;
 
 public class L119LongestConsecutive {
     public static void main(String[] args) {
+
     }
 
+    /**
+     *
+     * @param nums
+     * @return
+     */
     public static int longestConsecutive(int[] nums) {
         if(nums==null||nums.length==0){
             return 0;
